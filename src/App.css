@@ -1,0 +1,92 @@
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.main-nav-menu ul li {
+  display: inline-block;
+  padding: 8px;
+}
+
+
+.main-nav-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.main-nav-menu {
+  background: #000;
+  height: 60px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-align: center;
+}
+
+img.banner-img {
+  width: 100%;
+}
+
+
+input.inputBox {
+  display: block;
+  padding: 14px;
+  margin: 25px;
+  width: 400px;
+}
+
+.main-collection-input-page {
+  margin-left: 679px;
+}
+.main-input-box {
+  margin-left: 728px;
+}
+.custom-sign-up h2 {
+  text-align: center;
+}
+
+button.Sign-up-btn.brn {
+  margin: 25px;
+  width: 255px;
+  margin-left: 97px;
+  padding: 21px;
+  background-color: skyblue;
+  cursor: pointer;
+}
+.main-collection-input-page {
+  margin-left: 731px;
+}
+.main-home-page {
+  text-align: center;
+}
+span.product-price {
+  color: red;
+}
+.main-register-page.login-page.center.container h2 {
+  text-align: center;
+}
+.main-login-input-page {
+  margin-left: 452px;
+}
+.register-page.col-ms-1.col-ms-1 {
+  text-align: center;
+}
+
+
+.register-page.col-ms-1.col-ms-1 button {
+  width: 200px;
+  height: 51px;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
