@@ -5,5 +5,4 @@ const NoPage = () => {
        </div>
     ) 
   };
-
   export default NoPage;

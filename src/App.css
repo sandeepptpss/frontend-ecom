@@ -10,13 +10,13 @@
   }
 }
 
-.main-nav-menu ul li {
+.main-nav-menu  li {
   display: inline-block;
   padding: 8px;
 }
 
 
-.main-nav-menu ul li a {
+.main-nav-menu  li a {
   text-decoration: none;
   color: #fff;
 }
@@ -25,13 +25,15 @@
   height: 60px;
   padding-top: 1px;
   padding-bottom: 1px;
-  text-align: center;
+ 
 }
 
 img.banner-img {
   width: 100%;
 }
-
+span.main-nav-right {
+  margin-left: 1605px;
+}
 
 input.inputBox {
   display: block;

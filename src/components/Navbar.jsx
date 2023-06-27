@@ -8,25 +8,31 @@ const NavBar =()=>{
      navigate('/signup')
   } 
     return(
-<div className="main-nav-menu">
-<ul>
+
+<div>
+
+{auth?<ul className="main-nav-menu">
 <li><Link to="/">Home</Link></li>
 <li><Link to="/collections">Product</Link></li>
 <li><Link to="/add">add Product</Link></li>
-
 <li><Link to="/update">Update Product</Link></li>
 <li><Link to="/profile">Profile</Link></li>
-
-<li> {auth? <Link onClick={logout} to="/signup">Logout</Link>
-:<>
+<Link onClick={logout} to="/signup">Logout</Link>
+</ul>
+:
+<ul className="main-nav-menu">
+<li><Link to="/">Home</Link></li>
+<li><Link to="/about">About</Link></li>
+<span  className="main-nav-right">
 <li><Link to="/signup">Signup</Link></li>
 <li><Link to="/login">Login</Link></li>
-</>
-
-}</li>
-
-
+</span>
 </ul>
+
+
+
+}
+
 </div>
 )
 }

@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-
     const navigate = useNavigate();
     useEffect(()=>{
         const auth =localStorage.getItem('user');
@@ -11,7 +10,6 @@ const Login = () => {
             navigate('/')
         }
     })
-
    const loginUser = async()=> {
         let result = await fetch('http://localhost:8000/login', {
             method: 'POST',
@@ -27,9 +25,9 @@ const Login = () => {
         navigate('/')
      }else{
         console.warn('please enter correct details')
-     }
-}
-    return (
+    }
+ }
+return (
          <>
             <div className="main-register-page  login-page center container">
                 <div className="register-page col-ms-1  col-ms-1 ">
@@ -37,16 +35,13 @@ const Login = () => {
                     <br></br>
                     <div className="main-login-input-page">
                     <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="form-control inputBox" placeholder="Enter email or User name"/>
-         
                     <br></br>
                     <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="form-control inputBox" placeholder="Enter Password"/>
-           
                     <br></br>
                     </div>
                     <button type="submit" onClick={loginUser} className="btn btn-primary">Login</button>
                     <br></br>
                     <Link to="/signup">Sign Up</Link>
-                    
                 </div>
             </div>
         </>
