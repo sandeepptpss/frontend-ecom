@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import { Link  } from 'react-router-dom';
 const Product =() => {
   const [data, setData] = useState([]);
   const fetchData = async () => {
@@ -30,9 +30,9 @@ const Product =() => {
       <p className="product-description">
       {item.description.slice(0, 70)}…
       </p>
-      {/* <Link target={"_blank"} to={`/products/${item.id}`}>
-      <button className="btn btn-primary">Add To Cart</button>
-    </Link> */}
+      
+
+      <Link  to={"/collections/update/"+item._id}>Update</Link>
     </div>
         ))}
       </div>
